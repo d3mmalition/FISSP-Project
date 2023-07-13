@@ -1,0 +1,45 @@
+/* Header.css */
+
+.header {
+    /* Header styles */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-left svg {
+    width: 40px;
+    /* Adjust the size of the SVG icon */
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.header-right {
+    display: flex;
+}
+
+.header-right {
+    width: 24px;
+    /* Adjust the size of the placeholder icons */
+    height: 24px;
+    background-color: #f0f0f0;
+    /* Add desired background color */
+    margin-left: 0.5rem;
+    /* Add other styling as needed */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5;
+    padding: 5;
+}
