@@ -1,0 +1,35 @@
+.about-container {
+    padding: 2rem;
+    /* Add styles for the container as needed */
+}
+
+.board-members {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    justify-content: center;
+}
+
+.member {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.member:last-child {
+    margin-right: 0;
+}
+
+.member img {
+    width: 150px;
+    /* Adjust the width as needed */
+    height: 150px;
+    /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member h3,
+.member p {
+    margin: 0.5rem 0;
+}
