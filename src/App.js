@@ -1,8 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
-import Hero from './components/Hero';
+import Homepage from './components/Homepage';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import About from './components/About/About';
+
 // Import other components as needed
 
 function App() {
@@ -12,11 +15,13 @@ function App() {
         <Header />
         <div className='main-content'>
           <Routes>
-            <Route path="/" element={<Hero />} />
+            <Route path="/" element={<Homepage />} />
+            <Route path="/about" element={<About />} />
             {/* <Route path="/about" element={<About />} /> */}
             {/* Add more routes for different pages */}
           </Routes>
         </div>
+        <Footer />
       </div>
     </Router>
   );
