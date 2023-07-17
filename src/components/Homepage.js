@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'
 
-function Hero() {
+function Homepage() {
     return (
         <div>
             <h1>Welcome to FISSP!</h1>
@@ -10,4 +10,4 @@ function Hero() {
     );
 }
 
-export default Hero;
+export default Homepage;
