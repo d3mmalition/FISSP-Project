@@ -27,7 +27,7 @@ function Header() {
                         <a href="/about">About FISSP</a>
                     </li>
                     <li className="nav-link">
-                        <a href="/about">Support FISSP</a>
+                        <a href="/support">Support FISSP</a>
                     </li>
                     {/* Add more navigation links as needed */}
                 </ul>

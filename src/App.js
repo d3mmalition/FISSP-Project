@@ -5,6 +5,7 @@ import Homepage from './components/Homepage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
+import Support from './components/Support/Support';
 
 // Import other components as needed
 
@@ -17,7 +18,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />
-            {/* <Route path="/about" element={<About />} /> */}
+            <Route path="/support" element={<Support />} />
+
             {/* Add more routes for different pages */}
           </Routes>
         </div>

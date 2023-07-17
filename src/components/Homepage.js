@@ -1,7 +1,13 @@
 import React from 'react';
 import ContactForm from './Homepage/ContactForm';
+import Calendar from 'react-calendar';
+
+import '../App.css'
+import FacebookWidget from './Homepage/FbWidget';
 
 function Homepage() {
+    const currentDate = new Date();
+
     return (
         <div className="homepage">
             <div className="hero">
@@ -13,14 +19,14 @@ function Homepage() {
                 <div className="section">
                     <h2>About Us</h2>
                     {/* Add content about the CSO */}
+                    <FacebookWidget/>
                 </div>
                 <div className="section">
                     <h2>Events</h2>
-                    {/* Add upcoming events or event listings */}
-                </div>
+                    <Calendar value={currentDate}/> {/* Add upcoming events or event listings */} </div>
                 <div className="section">
                     <h2>Contact Us</h2>
-                    <ContactForm />
+                    <ContactForm/>
                 </div>
             </div>
         </div>

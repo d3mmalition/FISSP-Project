@@ -20,7 +20,6 @@ function ContactForm() {
 
     return (
         <form className="contact-form" onSubmit={handleSubmit}>
-            <h2>Contact Us</h2>
             <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input
