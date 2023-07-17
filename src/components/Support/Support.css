@@ -1,0 +1,29 @@
+.support {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    /* Add other styles as needed */
+}
+
+.carousel-root {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel .slider-wrapper {
+    margin-bottom: 2rem;
+}
+
+.carousel .slide {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.carousel .legend {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
