@@ -1,47 +1,125 @@
 /* Header.css */
 
-/* .header {
-    /* Header styles 
-} */
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  position: relative;
+  justify-content: flex-start;
+}
 
-.header-left {
+.landing-name {
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+
+.nav-links,
+.action-links {
+  display: none;
+}
+
+.hamburger-menu {
+  display: block;
+}
+
+/* Media query for screens over 1025 pixels */
+@media (min-width: 1026px) {
+  .landing-name {
+    margin-right: 1rem;
+  }
+
+  .nav-links,
+  .action-links {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-}
+  }
 
-.header-left svg {
-    width: 40px;
-    /* Adjust the size of the SVG icon */
-    height: 40px;
-    margin-right: 0.5rem;
-}
+  .nav-links a,
+  .action-links a {
+    margin-left: 1rem;
+  }
 
-.header-left h1 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-.header-right {
+  .nav-links {
     display: flex;
-}
+    align-items: center;
+    margin-left: -20rem; /* Adjust the value as needed */
+  }
 
-.header-right {
-    width: 40px;
-    /* Adjust the size of the placeholder icons */
-    height: 40px;
-    /* background-color: #f0f0f0; */
-    /* Add desired background color */
-    margin-left: 0.5rem;
-    /* Add other styling as needed */
-}
-
-.nav-links {
-    display: flex;
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .header-container {
     justify-content: space-between;
-    list-style: none;
-    margin: 5;
+  }
+}
+
+/* Media query for screens under 1025 pixels */
+@media (max-width: 1025px) {
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
     padding: 1rem;
-    /* padding-right: 1rem; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .nav-links.show a {
+    margin-bottom: 1rem;
+  }
+
+  .action-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .action-links .contact-link {
+    display: none;
+  }
+
+  .action-links .donate-link {
+    font-size: 1.5rem; /* Adjust the font size */
+    margin-right: auto;
+    padding-right: 1rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #000;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding-left: 3rem; /* Adjust as needed */
+    padding-top: 1.25rem; /* Adjust as needed */
+    padding-bottom: 1rem; /* Adjust as needed */
+    color: #000; /* Adjust the color */
+  }
+
+  /* Media query for screens under 400 pixels */
+  @media (max-width: 400px) {
+    .header-container {
+      flex-wrap: wrap;
+    }
+
+    .landing-name {
+      margin-bottom: 1rem;
+    }
+
+    .donate-link {
+      display: block;
+      /* margin-top: 1rem; */
+      margin: 0 auto;
+    }
+  }
 }

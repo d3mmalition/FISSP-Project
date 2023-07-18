@@ -19,15 +19,16 @@ function Homepage() {
                 <div className="section">
                     <h2>About Us</h2>
                     {/* Add content about the CSO */}
-                    <FacebookWidget/>
+                    <FacebookWidget />
                 </div>
                 <div className="section">
                     <h2>Events</h2>
-                    <Calendar value={currentDate}/> {/* Add upcoming events or event listings */} </div>
-                <div className="section">
+                    <Calendar value={currentDate} /> {/* Add upcoming events or event listings */} </div>
+                <section id="join-section"><div className="section">
                     <h2>Contact Us</h2>
-                    <ContactForm/>
+                    <ContactForm />
                 </div>
+                </section>
             </div>
         </div>
     );
