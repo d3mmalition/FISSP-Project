@@ -18,6 +18,11 @@
   display: none;
 }
 
+.nav-links a:visited,
+.action-links a:visited {
+  color: #000;
+}
+
 .hamburger-menu {
   display: block;
 }
@@ -36,7 +41,20 @@
 
   .nav-links a,
   .action-links a {
+    color: #000;
     margin-left: 1rem;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover,
+  .action-links a:hover {
+    text-decoration: underline;
+  }
+
+  .nav-links a:visited,
+  .action-links a:visited,
+  .landing-name a:visited {
+    color: #000;
   }
 
   .nav-links {
