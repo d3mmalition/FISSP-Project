@@ -68,6 +68,37 @@
   margin-left: 5px;
 }
 
+/* Carousel Controlls */
+
+.carousel {
+  /* Set the width to display multiple images across the screen */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+
+.carousel img {
+  /* Set the width and margin for each image slide */
+  width: 300px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust the margin between images as needed */
+  animation: carousel-slide 90s linear infinite; /* Apply the animation to each image */
+
+}
+
+@keyframes carousel-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-1000%); /* Adjust the translateX value to control the movement distance */
+  }
+}
+
+
 /* Media query for screens over 1025 pixels (similar to the header's min-width) */
 @media (min-width: 1026px) {
   .hero {

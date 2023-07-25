@@ -11,11 +11,10 @@ function LandingPage() {
     return (
         <div className="landingPage">
             <Hero />
-            <hr className="section-divider" />
+            <div className="waves"></div> {/* Add the Waves Content Divider here */}
             <div className="image-carousel">
                 <ImageCarousel />
-                <hr className="section-divider" />
-
+                <div className="waves"></div> {/* Add the Waves Content Divider here */}
                 <div className="section">
                     <h2>Events</h2>
                     <Calendar value={currentDate} />
@@ -31,4 +30,5 @@ function LandingPage() {
         </div>
     );
 }
+
 export default LandingPage;
