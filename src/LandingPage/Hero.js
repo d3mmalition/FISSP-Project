@@ -1,11 +1,16 @@
 import React from "react";
 import videoSource from "../LandingPage/hd0047.mov.crdownload";
+import './LandingPage.css';
 
 function Hero() {
     return (
         <div className="hero">
             <div className="hero-content">
-                <h1>The Friends of Ichetucknee Spring State Park</h1>
+                <h1>
+                    Friends of <br />
+                    Ichetucknee <br />
+                    Spring State Park
+                </h1>
                 <p>The CSO group of Ichetucknee Spring State Park</p>
                 <div className="hero-links">
                     <a href="/donate">Donate to FISSP</a>
@@ -30,7 +35,10 @@ function Hero() {
                             strokeLinejoin="round"
                             d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                         />
-                    </svg> <p>12087 Southwest, US-27, Fort White, FL 32038</p>
+                    </svg>
+                    <div className="address-text">
+                        <p>12087 Southwest, US-27, Fort White, FL 32038</p>
+                    </div>
                 </div>
             </div>
             <div className="hero-video">

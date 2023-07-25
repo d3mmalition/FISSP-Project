@@ -1,51 +1,15 @@
+/* Shared Styles */
 .hero {
   display: flex;
   flex-direction: column;
   padding: 64px 48px 24px 24px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   background-color: #f9f9f9;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    flex-direction: row;
-    padding: 64px 48px 24px;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-  }
-}
-
-.hero-video {
-  width: 70%;
-  height: auto;
-  vertical-align:middle;
-  border-radius: 30px;
-  overflow: hidden;
-  padding-left: 64px;
-}
-
-
-.hero-video video {
-  width: 100%;
-  height: 100%;
-  border-radius: 30px; /* Adjust the value as needed */
-}
-
-
-.hero-address svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.5rem;
-}
-
 .hero-content h1 {
-  display: flex;
-  font-size: 2.5rem;
+  font-size: 40px; /* Set the h1 font size to 56 */
   line-height: 1.2;
-  text-align: left;
+  text-align: left; /* Align the hero-content to the left */
 }
 
 .hero-content p {
@@ -54,13 +18,16 @@
   color: #000;
 }
 
-
+.hero-links {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to a new line */
+  justify-content: space-between; /* Separate buttons with equal space */
+}
 
 .hero-links a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   font-size: 1rem;
   padding: 8px 12px;
   background-color: #34d399;
@@ -70,6 +37,8 @@
   transition: all 0.3s ease;
   outline: none;
   cursor: pointer;
+  margin-bottom: 8px; /* Add some vertical spacing between buttons */
+  flex: 1 0 45%; /* Buttons take up the full width and equal space */
 }
 
 .hero-links a:hover,
@@ -81,4 +50,74 @@
   background-color: #1da286;
 }
 
+.hero-address {
+  display: flex;
+  align-items: center; /* Align address and pin vertically */
+  margin-left: 5px;
+}
 
+.hero-address svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 16px 5px 24px;
+}
+
+.address-text {
+  font-size: 1rem;
+  color: #000;
+  margin-left: 5px;
+}
+
+/* Media query for screens over 1025 pixels (similar to the header's min-width) */
+@media (min-width: 1026px) {
+  .hero {
+    flex-direction: row;
+    padding: 64px 48px 24px;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .hero-video {
+    width: 60%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 30px;
+    overflow: hidden;
+    padding-left: 64px;
+    align-self: center; /* Center the video horizontally */
+  }
+
+  .address-text {
+    margin-left: 8px; /* Add some space between the pin and address */
+  }
+
+  /* Make sure the buttons reset to their original style */
+  .hero-links a {
+    flex: 1 0 45%;
+  }
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px; /* Adjust the value as needed */
+}
+
+/* Media query for screens under 1025 pixels (similar to the header's max-width) */
+@media (max-width: 1025px) {
+  .hero {
+    padding: 64px 48px 24px;
+    text-align: left;
+  }
+
+  .hero-video {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Update the buttons for smaller screens */
+  .hero-links a {
+    flex: 1 0 100%; /* Buttons take up the full width */
+  }
+}

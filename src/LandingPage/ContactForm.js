@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './LandingPage.css'; // Import the shared CSS file
+
 
 function ContactForm() {
     const [name, setName] = useState('');

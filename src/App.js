@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css'
-import LandingPage from './LandingPage/LandingPage';
+import './App.css'; // Import global app styles first
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Support from './components/Support/Support';
+import LandingPage from './LandingPage/LandingPage'; // Import LandingPage CSS after other styles
+
 
 // Import other components as needed
 
