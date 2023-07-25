@@ -3,14 +3,23 @@
 .header-container {
   display: flex;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.8rem;
   position: relative;
   justify-content: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add the shadow here */
 }
 
 .landing-name {
   font-size: 1.5rem;
   margin-right: auto;
+  margin: 0.1rem 0.1rem 0.5rem; 
+  padding-right: 8rem;
+  text-decoration: none; 
+  color: #000; 
+}
+
+h1 {
+  margin: 0.5rem 0;
 }
 
 .nav-links,
@@ -27,6 +36,33 @@
   display: block;
 }
 
+.action-links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  padding: 8px 12px;
+  background-color: #34d399;
+  color: #fff;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  outline: none;
+  cursor: pointer;
+}
+
+.action-links a:hover,
+.action-links a:focus {
+  background-color: #22c998;
+}
+
+.action-links a:active {
+  background-color: #1da286;
+}
+
+
+
 /* Media query for screens over 1025 pixels */
 @media (min-width: 1026px) {
   .landing-name {
@@ -37,6 +73,8 @@
   .action-links {
     display: flex;
     align-items: center;
+     font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
   }
 
   .nav-links a,
@@ -65,12 +103,16 @@
 
   .hamburger-menu {
     display: none;
+    padding-bottom: 4px;
+
   }
   
   .header-container {
     justify-content: space-between;
   }
 }
+
+
 
 /* Media query for screens under 1025 pixels */
 @media (max-width: 1025px) {
@@ -96,7 +138,7 @@
     align-items: center;
   }
 
-  .action-links .contact-link {
+  .action-links  {
     display: none;
   }
 
@@ -108,6 +150,7 @@
 
   .hamburger-menu {
     display: block;
+    padding-bottom: 4px;
   }
 
   .hamburger.is-active .hamburger-inner,
@@ -118,26 +161,16 @@
 
   .nav-links a {
     display: inline-block;
-    padding-left: 3rem; /* Adjust as needed */
-    padding-top: 1.25rem; /* Adjust as needed */
-    padding-bottom: 1rem; /* Adjust as needed */
-    color: #000; /* Adjust the color */
+    padding-left: 3rem;
+    padding-top: 1.25rem; 
+    padding-bottom: 1rem; 
+    color: #000; 
   }
 
   /* Media query for screens under 400 pixels */
   @media (max-width: 400px) {
     .header-container {
       flex-wrap: wrap;
-    }
-
-    .landing-name {
-      margin-bottom: 1rem;
-    }
-
-    .donate-link {
-      display: block;
-      /* margin-top: 1rem; */
-      margin: 0 auto;
     }
   }
 }
