@@ -11,6 +11,13 @@ import image7 from "./pictures/image7.jpg";
 import image8 from "./pictures/image8.jpg";
 import image9 from "./pictures/image9.jpg";
 import image10 from "./pictures/image10.jpg";
+import image11 from "./pictures/image11.jpg";
+import image12 from "./pictures/image12.jpg";
+import image13 from "./pictures/image13.jpg";
+import image14 from "./pictures/image14.jpg";
+import image15 from "./pictures/image15.jpg";
+import image16 from "./pictures/image16.jpg";
+import image17 from "./pictures/image17.jpg";
 
 function ImageCarousel() {
     const images = [
@@ -24,6 +31,13 @@ function ImageCarousel() {
         image8,
         image9,
         image10,
+        image11,
+        image12,
+        image13,
+        image14,
+        image15,
+        image16,
+        image17,
     ];
 
     // Duplicate the images to create a continuous loop
