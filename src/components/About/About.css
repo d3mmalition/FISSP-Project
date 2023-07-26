@@ -1,6 +1,5 @@
 .about-container {
     padding: 2rem;
-    /* Add styles for the container as needed */
 }
 
 .board-members {
@@ -22,9 +21,7 @@
 
 .member img {
     width: 150px;
-    /* Adjust the width as needed */
     height: 150px;
-    /* Adjust the height as needed */
     object-fit: cover;
     border-radius: 50%;
 }

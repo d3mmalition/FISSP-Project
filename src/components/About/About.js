@@ -23,7 +23,7 @@ function About() {
                     <h3>Jane Smith</h3>
                     <p>Position: Vice President</p>
                 </div>
-                {/* Add more board members as needed */}
+                {/* Add more board members  */}
             </div>
 
             <h2>Join Friends of Ichetucknee State Park (FISSP)</h2>

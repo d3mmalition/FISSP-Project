@@ -1,5 +1,4 @@
 .footer {
-    /* Footer styles */
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -10,7 +9,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 999; /* Ensure the footer is on top of other content */
+    z-index: 999; 
 
 }
 

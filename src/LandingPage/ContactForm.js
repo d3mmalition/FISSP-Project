@@ -10,8 +10,6 @@ function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form submission logic
-        // You can use the form data (name, email, message) for further processing
-        // For example, send an email or store the form data in a database
         console.log('Form submitted:', { name, email, message });
         // Reset the form fields
         setName('');

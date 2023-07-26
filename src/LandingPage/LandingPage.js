@@ -26,7 +26,7 @@ function LandingPage() {
             <div className="divider"></div>
             <div className="image-carousel">
                 <ImageCarousel />
-                <div className="waves"></div> {/* Add the Waves Content Divider here */}
+                <div className="waves"></div>
                 <div className="events-container">
                     <h2>Events</h2>
                     <Calendar value={currentDate} />

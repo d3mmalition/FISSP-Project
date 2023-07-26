@@ -135,7 +135,6 @@ body {
 }
 
 .contact-form {
-  /* Styling for the form fields and button in the contact form */
   margin-top: 16px;
 }
 
@@ -190,14 +189,13 @@ body {
     border-radius: 30px;
     overflow: hidden;
     padding-left: 64px;
-    align-self: center; /* Center the video horizontally */
+    align-self: center; 
   }
 
   .address-text {
-    margin-left: 2px; /* Add some space between the pin and address */
+    margin-left: 2px; /* space between the pin and address */
   }
 
-  /* Make sure the buttons reset to their original style */
   .hero-links a {
     flex: 1 0 45%;
   }
@@ -206,7 +204,7 @@ body {
 .hero-video video {
   width: 100%;
   height: 100%;
-  border-radius: 30px; /* Adjust the value as needed */
+  border-radius: 30px;
 }
 
 /* Media query for screens under 1025 pixels (similar to the header's max-width) */
@@ -226,8 +224,7 @@ body {
     margin-bottom: 1.5rem;
   }
 
-  /* Update the buttons for smaller screens */
   .hero-links a {
-    flex: 1 0 100%; /* Buttons take up the full width */
+    flex: 1 0 100%; 
   }
 }

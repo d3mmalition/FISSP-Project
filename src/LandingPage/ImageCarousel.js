@@ -40,7 +40,6 @@ function ImageCarousel() {
         image17,
     ];
 
-    // Duplicate the images to create a continuous loop
     const imagesLoop = [...images, ...images, ...images];
 
     return (
