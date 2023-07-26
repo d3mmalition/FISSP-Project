@@ -5,10 +5,11 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Support from './components/Support/Support';
-import LandingPage from './LandingPage/LandingPage'; // Import LandingPage CSS after other styles
+import LandingPage from './LandingPage/LandingPage';
+import axios from "axios";
 
 
-// Import other components as needed
+
 
 function App() {
   return (

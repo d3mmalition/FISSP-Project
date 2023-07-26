@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './About.css';
 
 function About() {
+    const [data, setData] = useState({});
+
+    useEffect(() => {
+        // Make the API request when the component mounts
+        axios.get('/api/about')
+            .then(response => {
+                setData(response.data);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    }, []);
+
     return (
         <div className="about-container">
-            {/* Content for the About page */}
             <h2>About Ichetucknee State Park</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam neque eu ligula elementum, sit amet malesuada odio posuere. Sed scelerisque tempus nisi, vitae posuere odio consectetur et.</p>
 
