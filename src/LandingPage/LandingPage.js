@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react';
 import ContactForm from './ContactForm';
-import Calendar from 'react-calendar';
 import './LandingPage.css';
 import Hero from './Hero';
 import ImageCarousel from './ImageCarousel';
+import InfoSection from './InfoSection'
 
 
 function LandingPage() {
-    const currentDate = new Date();
     useEffect(() => {
         // Check if the URL contains the hash "#join-section"
         if (window.location.hash === '#join-section') {
@@ -28,9 +27,8 @@ function LandingPage() {
                 <ImageCarousel />
                 <div className="waves"></div>
                 <div className="events-container">
-                    <h2>Events</h2>
-                    <Calendar value={currentDate} />
-                    {/* Add upcoming events or event listings */}
+                    <h2>What is the FISSP?</h2>
+                    <InfoSection />
                 </div>
                 <div className='section' id="join-section">
                     <div className="contact-container">
