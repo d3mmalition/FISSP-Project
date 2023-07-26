@@ -1,20 +1,20 @@
 import React from "react";
-import './LandingPage.css';
+import "./LandingPage.css";
 
-import infoimage1 from './pictures/infoimage1.jpg'
-import infoimage2 from './pictures/infoimage2.jpg'
-import infoimage3 from './pictures/infoimage3.jpg'
-
-
+import imgcover1 from "./pictures/imgcover1.jpg";
+import imgcover2 from "./pictures/imgcover2.jpg";
+import imgcover3 from "./pictures/imgcover3.jpg";
 
 function InfoSection() {
     return (
         <div className="info-section">
             <div className="info-container">
-                <div className="info-image">
-                    <img src={infoimage1} alt="Info" />
+                <div className="info-image" id="info-image-1">
+                    <div className="imgcover">
+                        <img src={imgcover1} alt="Info" />
+                    </div>
                 </div>
-                <div className="info-content">
+                <div className="info-content" id="info-content-1">
                     <h2>Info Section Title 1</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -25,10 +25,12 @@ function InfoSection() {
             </div>
 
             <div className="info-container info-reverse">
-                <div className="info-image">
-                    <img src={infoimage3} alt="Info" />
+                <div className="info-image" id="info-image-2">
+                    <div className="imgcover">
+                        <img src={imgcover3} alt="Info" />
+                    </div>
                 </div>
-                <div className="info-content">
+                <div className="info-content" id="info-content-2">
                     <h2>Info Section Title 2</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -39,10 +41,12 @@ function InfoSection() {
             </div>
 
             <div className="info-container">
-                <div className="info-image">
-                    <img src={infoimage2} alt="Info" />
+                <div className="info-image" id="info-image-3">
+                    <div className="imgcover">
+                        <img src={imgcover2} alt="Info" />
+                    </div>
                 </div>
-                <div className="info-content">
+                <div className="info-content" id="info-content-3">
                     <h2>Info Section Title 3</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -52,7 +56,6 @@ function InfoSection() {
                 </div>
             </div>
         </div>
-
     );
 }
 

@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
-import ContactForm from './ContactForm';
 import './LandingPage.css';
+import './InfoSection.css'
 import Hero from './Hero';
 import ImageCarousel from './ImageCarousel';
 import InfoSection from './InfoSection'
+import ContactForm from './ContactForm'
+
 
 
 function LandingPage() {
