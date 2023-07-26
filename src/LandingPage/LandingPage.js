@@ -4,7 +4,7 @@ import './InfoSection.css'
 import Hero from './Hero';
 import ImageCarousel from './ImageCarousel';
 import InfoSection from './InfoSection'
-import ContactForm from './ContactForm'
+import Mission from './Mission'
 
 
 
@@ -34,8 +34,8 @@ function LandingPage() {
                 </div>
                 <div className='section' id="join-section">
                     <div className="contact-container">
-                        <h2>Contact Us</h2>
-                        <ContactForm />
+                        {/* <h2>Contact Us</h2> */}
+                        <Mission />
                     </div>
                 </div>
             </div>

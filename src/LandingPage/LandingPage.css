@@ -135,7 +135,7 @@ body {
 .info-container .info-content {
   flex: 1;
   padding: 10px;
-  width: 500px;
+  width: 450px;
   height: auto;
 }
 
@@ -207,11 +207,11 @@ body {
 }
 
 .info-container:hover #info-image-2 .imgcover {
-  background-image: url('./pictures/infoimage3.jpg');
+  background-image: url('./pictures/infoimage2.jpg');
 }
 
 .info-container:hover #info-image-3 .imgcover {
-  background-image: url('./pictures/infoimage2.jpg');
+  background-image: url('./pictures/infoimage3.jpg');
 }
 
   /* Hide .info-image img on hover, but still maintain the layout space */
@@ -267,5 +267,46 @@ body {
 
   .info-container .info-image img {
     max-width: 300px;
+  }
+}
+
+
+.mission-section {
+  background-color: #FEFAE0;
+  padding: 40px;
+}
+
+.mission-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission-box {
+  flex: 1;
+  padding: 20px;
+  background-color: #DDA15E;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.mission-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.mission-box p {
+  font-size: 16px;
+  color: #000;
+}
+
+/* Media query for screens under 1025 pixels (similar to the header's max-width) */
+@media (max-width: 1024px) {
+  .mission-container {
+    flex-direction: column;
+  }
+
+  .mission-box {
+    margin: 10px 0;
   }
 }
