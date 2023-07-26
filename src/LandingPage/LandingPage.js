@@ -21,12 +21,12 @@ function LandingPage() {
                     <Calendar value={currentDate} />
                     {/* Add upcoming events or event listings */}
                 </div>
-                <section id="join-section">
+                <div className='section' id="join-section">
                     <div className="contact-container">
                         <h2>Contact Us</h2>
                         <ContactForm />
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     );

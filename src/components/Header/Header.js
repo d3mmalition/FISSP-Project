@@ -30,13 +30,13 @@ function Header() {
             <div className={`nav-links ${menuOpen ? 'show' : ''}`}>
 
                 <Link to="/about">About</Link>
-                <Link to="#join-section">Join</Link>
+                <Link to="/#join-section">Join</Link>
                 <Link to="/support">Support</Link>
                 <Link to="/careers">Contact</Link>
             </div>
             <div className='action-links'>
                 <div className='contact-link'>
-                    <Link to='#join-section'>Contact Us</Link>
+                    <Link to='/#join-section'>Contact Us</Link>
                 </div>
                 <div className='donate-link'>
                     <Link to='/support'>Donate to FISSP</Link>
