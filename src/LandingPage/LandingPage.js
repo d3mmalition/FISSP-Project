@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ContactForm from './ContactForm';
 import Calendar from 'react-calendar';
 import './LandingPage.css';
@@ -8,6 +8,17 @@ import ImageCarousel from './ImageCarousel';
 
 function LandingPage() {
     const currentDate = new Date();
+    useEffect(() => {
+        // Check if the URL contains the hash "#join-section"
+        if (window.location.hash === '#join-section') {
+            // Find the "join-section" element by its id
+            const joinSectionElement = document.getElementById('join-section');
+            if (joinSectionElement) {
+                // Scroll to the "join-section" element
+                joinSectionElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, []);
 
     return (
         <div className="landingPage">
