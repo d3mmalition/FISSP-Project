@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
 import imgcover1 from "./pictures/imgcover1.jpg";
@@ -9,11 +10,13 @@ function InfoSection() {
     return (
         <div className="info-section">
             <div className="info-container">
-                <div className="info-image" id="info-image-1">
-                    <div className="imgcover">
-                        <img src={imgcover1} alt="Info" />
+                <Link to="/about">
+                    <div className="info-image" id="info-image-1">
+                        <div className="imgcover">
+                            <img src={imgcover1} alt="Info" />
+                        </div>
                     </div>
-                </div>
+                </Link>
                 <div className="info-content" id="info-content-1">
                     <h2>Info Section Title 1</h2>
                     <p>
@@ -25,11 +28,13 @@ function InfoSection() {
             </div>
 
             <div className="info-container info-reverse">
-                <div className="info-image" id="info-image-2">
-                    <div className="imgcover">
-                        <img src={imgcover3} alt="Info" />
+                <Link to="/join">
+                    <div className="info-image" id="info-image-2">
+                        <div className="imgcover">
+                            <img src={imgcover3} alt="Info" />
+                        </div>
                     </div>
-                </div>
+                </Link>
                 <div className="info-content" id="info-content-2">
                     <h2>Info Section Title 2</h2>
                     <p>
@@ -41,11 +46,13 @@ function InfoSection() {
             </div>
 
             <div className="info-container">
-                <div className="info-image" id="info-image-3">
-                    <div className="imgcover">
-                        <img src={imgcover2} alt="Info" />
+                <Link to="/support">
+                    <div className="info-image" id="info-image-3">
+                        <div className="imgcover">
+                            <img src={imgcover2} alt="Info" />
+                        </div>
                     </div>
-                </div>
+                </Link>
                 <div className="info-content" id="info-content-3">
                     <h2>Info Section Title 3</h2>
                     <p>
