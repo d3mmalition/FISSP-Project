@@ -11,6 +11,10 @@ function Header() {
         setMenuOpen(!menuOpen);
     };
 
+    const handleNavLinkClick = () => {
+        setMenuOpen(false);
+    }
+
     return (
         <header className={`header-container ${menuOpen ? 'menu-open' : ''}`}>
             <div className='hamburger-menu'>
@@ -29,10 +33,10 @@ function Header() {
             </a>
             <div className={`nav-links ${menuOpen ? 'show' : ''}`}>
 
-                <Link to="/about">About</Link>
-                <Link to="/#join-section">Join</Link>
-                <Link to="/support">Support</Link>
-                <Link to="/careers">Contact</Link>
+                <Link to="/about" onClick={handleNavLinkClick}>About</Link>
+                <Link to="/#join-section" onClick={handleNavLinkClick}>Join</Link>
+                <Link to="/support" onClick={handleNavLinkClick}>Support</Link>
+                <Link to="/careers" onClick={handleNavLinkClick}>Contact</Link>
             </div>
             <div className='action-links'>
                 <div className='contact-link'>
