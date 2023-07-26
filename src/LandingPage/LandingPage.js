@@ -11,17 +11,17 @@ function LandingPage() {
     return (
         <div className="landingPage">
             <Hero />
-            <div className="waves"></div> {/* Add the Waves Content Divider here */}
+            <div className="divider"></div>
             <div className="image-carousel">
                 <ImageCarousel />
                 <div className="waves"></div> {/* Add the Waves Content Divider here */}
-                <div className="section">
+                <div className="events-container">
                     <h2>Events</h2>
                     <Calendar value={currentDate} />
                     {/* Add upcoming events or event listings */}
                 </div>
                 <section id="join-section">
-                    <div className="section">
+                    <div className="contact-container">
                         <h2>Contact Us</h2>
                         <ContactForm />
                     </div>
