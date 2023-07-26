@@ -1,20 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 import './About.css';
 
 function About() {
-    const [data, setData] = useState({});
-
-    useEffect(() => {
-        // Make the API request when the component mounts
-        axios.get('/api/about')
-            .then(response => {
-                setData(response.data);
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
-    }, []);
 
     return (
         <div className="about-container">
