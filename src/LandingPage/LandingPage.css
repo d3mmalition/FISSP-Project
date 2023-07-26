@@ -1,4 +1,8 @@
 /* Shared Styles */
+body {
+  overflow-x: hidden;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -168,6 +172,10 @@
 }
 /* Media query for screens over 1025 pixels (similar to the header's min-width) */
 @media (min-width: 1026px) {
+  body {
+  overflow-x: hidden;
+}
+
   .hero {
     flex-direction: row;
     padding: 64px 48px 36px;
@@ -203,6 +211,10 @@
 
 /* Media query for screens under 1025 pixels (similar to the header's max-width) */
 @media (max-width: 1025px) {
+  body {
+  overflow-x: hidden;
+}
+
   .hero {
     padding: 64px 48px 24px;
     text-align: left;
