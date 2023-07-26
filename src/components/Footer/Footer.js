@@ -20,7 +20,7 @@ function Footer() {
                     <a href="https://www.instagram.com">
                         <Instagram fontSize="large" />
                     </a>
-                    <a href="mailto:friendsofichetucknee@gmail.com">
+                    <a href="mailto:friendsofichetucknee@gmail.com" target="_blank">
                         <Email fontSize="large" />
                     </a>
                 </div>
