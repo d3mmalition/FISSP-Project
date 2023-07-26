@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Header.css';
 import 'hamburgers/dist/hamburgers.min.css';
+import { Link } from 'react-router-dom';
+
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -27,17 +29,17 @@ function Header() {
             </a>
             <div className={`nav-links ${menuOpen ? 'show' : ''}`}>
 
-                <a href="/about">About</a>
-                <a href="#join-section">Join</a>
-                <a href="/support">Support</a>
-                <a href="/careers">Contact</a>
+                <Link to="/about">About</Link>
+                <Link to="#join-section">Join</Link>
+                <Link to="/support">Support</Link>
+                <Link to="/careers">Contact</Link>
             </div>
             <div className='action-links'>
                 <div className='contact-link'>
-                    <a href='#join-section'>Contact Us</a>
+                    <Link to='#join-section'>Contact Us</Link>
                 </div>
                 <div className='donate-link'>
-                    <a href='/support'>Donate to FISSP</a>
+                    <Link to='/support'>Donate to FISSP</Link>
                 </div>
             </div>
         </header>
