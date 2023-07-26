@@ -1,10 +1,10 @@
 .footer {
     /* Footer styles */
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     bottom: 0;
@@ -20,6 +20,7 @@
 
 .footer-right {
     display: flex;
+    align-items: center;
 }
 
 .newsletter {
@@ -35,12 +36,12 @@
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
 }
 
 .newsletter button {
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: #283618;
     color: #fff;
     border: none;
     border-radius: 5px;
