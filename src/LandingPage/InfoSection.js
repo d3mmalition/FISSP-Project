@@ -18,7 +18,7 @@ function InfoSection() {
                     </div>
                 </Link>
                 <div className="info-content" id="info-content-1">
-                    <h2>Info Section Title 1</h2>
+                    <h2>Civil Service Organization</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                         lobortis tellus in velit scelerisque feugiat. Fusce ac massa sit
@@ -36,11 +36,11 @@ function InfoSection() {
                     </div>
                 </Link>
                 <div className="info-content" id="info-content-2">
-                    <h2>Info Section Title 2</h2>
+                    <h2>Getting Involved</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                        lobortis tellus in velit scelerisque feugiat. Fusce ac massa sit
-                        amet purus rhoncus convallis ut vel velit.
+                        By joining FISSP you're joining something larger than yourself.
+                        With educational opportunities, community cleanups, and various events
+                        you'll join like-minded people in bettering our community.
                     </p>
                 </div>
             </div>
@@ -54,11 +54,11 @@ function InfoSection() {
                     </div>
                 </Link>
                 <div className="info-content" id="info-content-3">
-                    <h2>Info Section Title 3</h2>
+                    <h2>Support FISSP</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                        lobortis tellus in velit scelerisque feugiat. Fusce ac massa sit
-                        amet purus rhoncus convallis ut vel velit.
+                        By supporting FISSP you're allowing it's members to continue providing meaningful
+                        and memorable experiences for future generations to see and experience the wonders of
+                        Florida's natural wildlife.
                     </p>
                 </div>
             </div>
