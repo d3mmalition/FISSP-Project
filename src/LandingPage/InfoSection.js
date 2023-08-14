@@ -18,7 +18,7 @@ function InfoSection() {
                     </div>
                 </Link>
                 <div className="info-content" id="info-content-1">
-                    <h2>Civil Service Organization</h2>
+                    <h2>Citizen Service Organization</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                         lobortis tellus in velit scelerisque feugiat. Fusce ac massa sit

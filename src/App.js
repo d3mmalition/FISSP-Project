@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import Support from './components/Support/Support';
 import LandingPage from './LandingPage/LandingPage';
-
+import ContactForm from './components/ContactForm/ContactForm';
 
 
 
@@ -20,6 +20,7 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/support" element={<Support />} />
+            <Route path="/contact" element={<ContactForm />} />
 
             {/* Add more routes for different pages */}
           </Routes>

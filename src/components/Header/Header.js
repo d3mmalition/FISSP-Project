@@ -34,9 +34,9 @@ function Header() {
             <div className={`nav-links ${menuOpen ? 'show' : ''}`}>
 
                 <Link to="/about" onClick={handleNavLinkClick}>About</Link>
-                <Link to="/#join-section" onClick={handleNavLinkClick}>Join</Link>
+                <Link to="/membership" onClick={handleNavLinkClick}>Join</Link>
                 <Link to="/support" onClick={handleNavLinkClick}>Support</Link>
-                <Link to="/careers" onClick={handleNavLinkClick}>Contact</Link>
+                <Link to="/contact" onClick={handleNavLinkClick}>Contact</Link>
             </div>
             <div className='action-links'>
                 <div className='contact-link'>
