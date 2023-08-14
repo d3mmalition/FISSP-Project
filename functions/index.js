@@ -7,8 +7,8 @@ admin.initializeApp();
 const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-        user: 'your-email@gmail.com',
-        pass: 'your-email-password'
+        user: functions.config().email.username,
+        pass: functions.config().email.password
     }
 });
 
@@ -16,8 +16,8 @@ exports.submitForm = functions.https.onRequest(async (req, res) => {
     const { name, email, message } = req.body;
 
     const mailOptions = {
-        from: 'your-email@gmail.com',
-        to: 'recipient@example.com',
+        from: functions.config().email.username,
+        to: functions.config().email.username,
         subject: 'New Form Submission',
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     };
