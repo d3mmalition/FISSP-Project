@@ -1,21 +1,14 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import './ContactForm.css'; // Import the shared CSS file
-
-
+import './ContactForm.css';
 
 function ContactForm() {
-    const emailUsername = process.env.REACT_APP_EMAIL_USERNAME;
-    const emailPassword = process.env.REACT_APP_EMAIL_PASSWORD;
-
     const { register, handleSubmit, reset } = useForm();
     const [submissionMessage, setSubmissionMessage] = useState('');
-    const serverUrl = process.env.REACT_APP_SERVER_URL;
-
 
     const onSubmit = async (data) => {
         try {
-            const response = await fetch(`${serverUrl}/submit-form`, { // Use the serverUrl here
+            const response = await fetch('/submit-form', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -25,15 +18,15 @@ function ContactForm() {
 
             if (response.ok) {
                 console.log('Form submitted successfully');
-                setSubmissionMessage('Form submitted successfully!'); // Set the success message
-                reset(); // Clear the form fields
+                setSubmissionMessage('Form submitted successfully!');
+                reset();
             } else {
                 console.error('Error submitting form');
-                setSubmissionMessage('Error submitting form. Please try again.'); // Set the error message
+                setSubmissionMessage('Error submitting form. Please try again.');
             }
         } catch (error) {
             console.error('Error:', error);
-            setSubmissionMessage('An error occurred. Please try again later.'); // Set a generic error message
+            setSubmissionMessage('An error occurred. Please try again later.');
         }
     };
 

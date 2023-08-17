@@ -1,50 +1,27 @@
-// server.js
 const express = require('express');
-const nodemailer = require('nodemailer');
 const cors = require('cors');
-
 const app = express();
 
-app.use(cors({
-    origin: 'http://localhost:3000', // Replace with the actual origin of your frontend
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true
-}));
-
 app.use(express.json());
+app.use(cors());
 
 const PORT = process.env.PORT || 3001;
 
+// Import the mailer module
+const { sendEmail } = require('./mailer'); // Adjust the path accordingly
 
-const transporter = nodemailer.createTransport({
-    service: 'Gmail',
-    auth: {
-        user: process.env.REACT_APP_EMAIL_USERNAME,
-        pass: process.env.REACT_APP_EMAIL_PASSWORD
-    }
-});
-
-app.post('/submit-form', (req, res) => {
+app.post('/submit-form', async (req, res) => {
     const { name, email, message } = req.body;
 
-    const mailOptions = {
-        from: email, // Sender's email
-        to: 'ecarr.gardner@gmail.com', // Your email address to receive the form
-        subject: 'New Form Submission',
-        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
-    };
-
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.log(error);
-            res.status(500).json({ success: false, message: 'Error sending email' });
-        } else {
-            console.log('Email sent: ' + info.response);
-            res.status(200).json({ success: true, message: 'Email sent successfully' });
-        }
-    });
+    try {
+        await sendEmail(name, email, message);
+        console.log('Email sent successfully');
+        res.status(200).json({ success: true, message: 'Email sent successfully' });
+    } catch (error) {
+        console.error('Error sending email:', error);
+        res.status(500).json({ success: false, message: 'Error sending email' });
+    }
 });
-
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
