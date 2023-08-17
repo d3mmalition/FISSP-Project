@@ -3,11 +3,14 @@ import { useForm } from 'react-hook-form';
 import './ContactForm.css'; // Import the shared CSS file
 
 
-const serverUrl = process.env.REACT_APP_SERVER_URL;
 
 function ContactForm() {
+    const emailUsername = process.env.REACT_APP_EMAIL_USERNAME;
+    const emailPassword = process.env.REACT_APP_EMAIL_PASSWORD;
+
     const { register, handleSubmit, reset } = useForm();
     const [submissionMessage, setSubmissionMessage] = useState('');
+    const serverUrl = process.env.REACT_APP_SERVER_URL;
 
 
     const onSubmit = async (data) => {
