@@ -5,9 +5,13 @@ const cors = require('cors');
 
 const app = express();
 
+app.use(cors({
+    origin: 'http://localhost:3000', // Replace with the actual origin of your frontend
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true
+}));
 
 app.use(express.json());
-app.use(cors());
 
 const PORT = process.env.PORT || 3001;
 
