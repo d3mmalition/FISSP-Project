@@ -28,7 +28,7 @@ function InfoSection() {
             </div>
 
             <div className="info-container info-reverse">
-                <Link to="/join">
+                <Link to="/membership">
                     <div className="info-image" id="info-image-2">
                         <div className="imgcover">
                             <img src={imgcover3} alt="Info" />

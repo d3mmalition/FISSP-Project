@@ -40,7 +40,7 @@ function Header() {
             </div>
             <div className='action-links'>
                 <div className='contact-link'>
-                    <Link to='/#join-section'>Contact Us</Link>
+                    <Link to='/contact'>Contact Us</Link>
                 </div>
                 <div className='donate-link'>
                     <Link to='/support'>Donate to FISSP</Link>

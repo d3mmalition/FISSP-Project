@@ -14,7 +14,7 @@ function Hero() {
                 <p>The CSO group of Ichetucknee Spring State Park</p>
                 <div className="hero-links">
                     <a href="/support">Donate to FISSP</a>
-                    <a href="/join">Join the FISSP</a>
+                    <a href="/membership">Join the FISSP</a>
                 </div>
                 <div className="hero-address">
                     <svg
