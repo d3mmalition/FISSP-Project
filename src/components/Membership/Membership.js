@@ -18,30 +18,36 @@ function Membership() {
                 <button>Join</button>
             </div>
             <div className="membership-tier">
-                <h2>Family - $25/year</h2>
+                <h2>Family Membership</h2>
+                <h3>$25/year</h3>
+                <hr></hr>
+                <p><b>Family</b> members get access to the following benefits:</p>
                 <ul>
                     <li>All Individual benefits</li>
                     <li>12 Park Passes for up to 8 family members</li>
                 </ul>
-                <button>Join "Family" Membership</button>
+                <button>Join</button>
             </div>
             <div className="membership-tier">
-                <h2>Benefactor - $100/year</h2>
+                <h2>Benefactor Membership</h2>
+                <h3>$100/year</h3>
+                <hr></hr>
+                <p><b>Benefactor</b> members get access to the following benefits:</p>
                 <ul>
                     <li>All Family benefits</li>
-                    <li>?</li>
-                    <li>?</li>
+                    <li>Additional benefits...</li>
                 </ul>
-                <button>Join "Benefactor Membership"</button>
+                <button>Join</button>
             </div>
             <div className="membership-tier">
-                <h2>Lifetime Member - $500</h2>
+                <h2>Lifetime Membership</h2>
+                <h3>$500 (one-time payment)</h3>
+                <hr></hr>
+                <p><b>Lifetime</b> members get access to the following benefits:</p>
                 <ul>
-                    <li>?</li>
-                    <li>?</li>
-                    <li>?</li>
+                    <li>Additional benefits...</li>
                 </ul>
-                <button>Join "Lifetime Membership"</button>
+                <button>Join</button>
             </div>
         </div>
     );
